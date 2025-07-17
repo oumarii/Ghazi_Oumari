@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ghazi OUMARI</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="./styles/navbarStyle.css">
+    <link rel="stylesheet" href="./styles/generalStyle.css">
+    <link rel="stylesheet" href="./styles/HomeStyle.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/AboutStyle.css">
+    <link rel="stylesheet" href="./styles/SkillStyle.css">
+    <link rel="stylesheet" href="./styles/projectStyles.css">
+    <link rel="stylesheet" href="./styles/imgSliderStyle.css">
+    <link rel="stylesheet" href="./styles/ContactStyle.css">
+</head>
+<body>
+    <nav id="stickyNav" class="light-navbar">
+        <div class="left_side">
+            <div class="logo">
+                <div class="circle">
+                    <div class="moon"></div>
+                </div>
+                <div class="letter">Ghazi</div>
+            </div>
+        </div>
+        <div class="right_side">
+            <a href="#Home" class="choice" lang="en">Home</a>
+            <a href="#About" class="choice" lang="en">About</a>
+            <a href="#Projects" class="choice" lang="en">Projects</a>
+            <a href="#Contact" class="choice" lang="en">Contact</a>
+            <a href="#Home" class="choice" lang="fr">Accueil</a>
+            <a href="#About" class="choice" lang="fr">À propos</a>
+            <a href="#Projects"class="choice" lang="fr">Projets</a>
+            <a href="#Contact" class="choice" lang="fr">Contact</a>
+        </div>
+        
+        
+        <div class="param">
+            <div class="colors" id="settings-icon"><i class="fas fa-cog"></i></div>
+            <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+        </div>
+
+        <!-- Color choice menu -->
+    <div class="options" id="options">
+        <div class="color-options" id="color-options">
+            <p lang="fr" class="color_option_text">Couleur du thème</p>
+            <p lang="en" class="color_option_text">Theme color</p>
+            <div class="color-picker">
+                <div class="color-option" data-color="#3c2c99"></div>
+                <div class="color-option" data-color="#000080"></div>
+
+
+                
+                <div class="color-option" data-color="#1854b4"></div>
+                <div class="color-option" data-color="#008000"></div>
+                
+                <div class="color-option" data-color="#B22222"></div>
+            </div>
+        </div>
+        <div class="lang-options">
+            <p class="lang_option_text">Language</p>
+            <div id="language-switcher" class="toggle-switch">
+                <label class="text">eng</label>
+                <input type="checkbox" id="language-toggle" onchange="toggleLanguage()">
+                <label for="language-toggle" class="toggle-button"></label>
+                <label class="text">fr</label>
+            </div>
+        </div>
+    </div>
+        
+    </nav>
+    <!-- Mobile menu container -->
+    <div class="mobile-menu light-navbar">
+        <a href="#Home" class="choice" lang="en">Home</a>
+        <a href="#About" class="choice" lang="en">About</a>
+        <a href="#Projects" class="choice" lang="en">Projects</a>
+        <a href="#Contact" class="choice" lang="en">Contact</a>
+        <a href="#Home" class="choice" lang="fr">Accueil</a>
+        <a href="#About" class="choice" lang="fr">À propos</a>
+        <a href="#Projects"class="choice" lang="fr">Projets</a>
+        <a href="#Contact" class="choice" lang="fr">Contact</a>
+    </div>
+
+    <!-- Color choice menu 
+    <div class="options" id="options">
+        <div class="color-options" id="color-options">
+            <p lang="fr" class="color_option_text">Couleur du thème</p>
+            <p lang="en" class="color_option_text">Theme color</p>
+            <div class="color-picker">
+                <div class="color-option" data-color="#3c2c99"></div>
+                <div class="color-option" data-color="#000080"></div>
+
+
+                
+                <div class="color-option" data-color="#1854b4"></div>
+                <div class="color-option" data-color="#008000"></div>
+                
+                <div class="color-option" data-color="#B22222"></div>
+            </div>
+        </div>
+        <div class="lang-options">
+            <p class="lang_option_text">Language</p>
+            <div id="language-switcher" class="toggle-switch">
+                <label class="text">eng</label>
+                <input type="checkbox" id="language-toggle" onchange="toggleLanguage()">
+                <label for="language-toggle" class="toggle-button"></label>
+                <label class="text">fr</label>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <main>
+        <div id="Home" class="Home_Container">
+            <div id="hexagonGrid"class="hexagon-grid">
+
+              </div>
+              <section id="Home" itemscope itemtype="http://schema.org/Person" class="home-section">
+                <!-- Section Anglaise -->
+                <div class="left-side" lang="en">
+                    <div class="welcomeName">
+                        <div class="welcome">Welcome to My Portfolio</div>
+                        <div class="name" itemprop="name">Ghazi Oumari</div>
+                    </div>
+                    <h2><span data-text="Computer Engineering">Computer Engineering</span></h2>
+                    <p itemprop="description">
+                        Hello! I'm a Computer Engineering graduate with a passion for Full Stack Development, DevOps, and AI.
+                    </p>
+                    <p>
+                        Feel free to explore my portfolio to see some of my academic and personal projects, and learn more about my journey.
+                    </p>
+                    <div class="cv_button">
+                        <a href="PDFS/CV_Ghazi_Oumari_eng.pdf" download="CV_Ghazi_Oumari_EN">
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Section Française -->
+                <div class="left-side" lang="fr" style="display: none;">
+                    <div class="welcomeName">
+                        <div class="welcome">Bienvenue sur mon portfolio</div>
+                        <div class="name" itemprop="name">Ghazi Oumari</div>
+                    </div>
+                    <h2><span data-text="Ingénieur en Génie Informatique">Ingénieur en Génie Informatique</span></h2>
+                    <p itemprop="description">
+                        Salut ! Je suis un ingénieur en génie informatique avec une passion pour le développement Full Stack, le DevOps et l'IA.
+                    </p>
+                    <p>
+                        N'hésitez pas à explorer mon portfolio pour découvrir certains de mes projets académiques et personnels, et en apprendre davantage sur mon parcours.
+                    </p>
+                    <div class="cv_button">
+                        <a href="PDFS/CV_Ghazi_Oumari_fr.pdf" download="CV_Ghazi_Oumari_FR">
+                            <span>Télécharger CV</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Section Droite -->
+                <div class="right-side">
+                    <div class="photo">
+                        <div class="photo_border" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                            <img src="PDFS/ghazi.jpg" alt="Portrait de Ghazi Oumari" itemprop="contentUrl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+        <section id="About" class="about-section section">
+                <div class="section-title-hex">
+                    <div class="hexagon-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <polygon points="50 0, 93.3 25, 93.3 75, 50 100, 6.7 75, 6.7 25"></polygon>
+                        </svg>
+                    </div>
+                    <h1 class="text reveal" lang="en">About</h1>
+                    <h1 class="text reveal" lang="fr">A Propos</h1>
+                    <div class="reflection" lang="en">About</div>
+                    <div class="reflection" lang="fr">A Propos</div>
+                </div>
+                <p class="desc reveal" lang="en">get to know me and my skills</p>
+                <p class="desc reveal" lang="fr">Apprenez à me connaître et à découvrir mes compétences</p>
+                <div class="about_container">
+                    <div class="box pers_info_section reveal">
+                        <h2 class="section_title">
+                            <p lang="en">Personal Information</p>
+                            <p lang="fr">Informations Personnelles</p>
+                            <hr class="title_line">
+                        </h2>
+                        <ul class="pers_info_list">
+                            <li lang="en"><span class="info-label">Name:</span> Ghazi Oumari</li>
+                            <li lang="en"><span class="info-label">Age:</span> 23</li>
+                            <li lang="en"><span class="info-label">Date of Birth:</span> August 01, 2001</li>
+                            <li lang="en"><span class="info-label">Place of Birth:</span> Tabarka</li>
+                            <li lang="en"><span class="info-label">Current Residence:</span> Ariana, Tunisie</li>
+                            <li lang="en"><span class="info-label">Nationality:</span> Tunisian</li>
+                            <li lang="en"><span class="info-label">Status:</span> Computer Engineering Graduate</li>
+
+                            <li lang="fr"><span class="info-label">Nom :</span> Ghazi Oumari</li>
+                            <li lang="fr"><span class="info-label">Âge :</span> 23</li>
+                            <li lang="fr"><span class="info-label">Date de Naissance :</span> 01 août 2001</li>
+                            <li lang="fr"><span class="info-label">Lieu de Naissance :</span> Tabarka</li>
+                            <li lang="fr"><span class="info-label">Adresse Actuelle :</span> Ariana, Tunisie</li>
+                            <li lang="fr"><span class="info-label">Nationalité :</span> Tunisienne</li>
+                            <li lang="fr"><span class="info-label">Statut :</span> Ingénieur en Génie Informatique</li>
+                        </ul>
+
+                    </div>
+                    <div class="box career_edu_section reveal">
+                        <div class="title_box">
+                            <div class="edu active section_title_container" onclick="toggleSection('edu')">
+                                <h2 class="section_title edu_title" lang="en">Education</h2>
+                                <h2 class="section_title edu_title" lang="fr">Éducation</h2>
+                            </div>
+                            <div class="career section_title_container" onclick="toggleSection('career')">
+                                <h2 class="section_title career_title" lang="en">Career</h2>
+                                <h2 class="section_title career_title" lang="fr">Carrière</h2>
+                            </div>
+                        </div>
+                        <div class="edu_career_container">
+                            <div class="list-container">
+                                <ul class="edu-list list active">
+                                    <li data-id="edu-entry-1" class="active">Lycée 2 mars 1943</li>
+                                    <li data-id="edu-entry-2">FST</li>
+                                    <li data-id="edu-entry-3">ENICAR</li>
+                                </ul>
+                                <ul class="career-list list">
+                                    <li data-id="career-entry-1">Vayetek <span lang="fr">(Stage PFE)</span><span lang="en">(Final Project Internship)</span></li>
+                                    <li data-id="career-entry-2">Linedata <span lang="fr">(Stage)</span><span lang="en">(Internship)</span></li>
+                                </ul>
+                            </div>
+                            <div class="info-container">
+                                <div class="edu-info active" id="edu-entry-1">
+                                    <!-- Information for Education Entry 1 -->
+                                    <h3 lang="fr"><span>Lycée 2 mars 1943</span> - Tabarka</h3>
+                                    <h3 lang="en"><span>2 mars 1943 High School</span> - Tabarka</h3>
+                                    <h5 class="date">2016 - 2020</h5>
+
+                                    <ul class="info-list">
+                                        <li lang="fr">Études secondaires au Lycée 2 mars 1943, Tabarka</li>
+                                        <li lang="en">Secondary education at 2 mars 1943 High School, Tabarka</li>
+                                    </ul>
+                                    <p lang="fr">Baccalauréat Mathématiques session 2020</p>
+                                    <p lang="en">Mathematics baccalaureate session 2020</p>
+                                </div>
+                                <div class="edu-info" id="edu-entry-2">
+                                    <!-- Informations pour la deuxième entrée éducative -->
+                                    <h3 lang="fr"><span>FST</span> - Faculté des Sciences de Tunis</h3>
+                                    <h3 lang="en"><span>FST</span> - Faculty of Sciences of Tunis</h3>
+                                    <h5 class="date">2020 - 2022</h5>
+                                    <ul class="info-list">
+                                        <li lang="fr">Études en cycles préparatoires à FST, Filière Physique et Chimie (PC)</li>
+                                        <li lang="fr">Réussite au Concours National d'Entrée aux Cycles de Formation d'Ingénieurs</li>
+                                        <li lang="en">Preparatory studies at FST, Physics and Chemistry (PC) track</li>
+                                        <li lang="en">Success in the National Engineering Entrance Exam</li>
+                                    </ul>
+                                </div>
+                                <div class="edu-info" id="edu-entry-3">
+                                    <!-- Informations pour la troisème entrée éducative -->
+                                    <h3 lang="fr"><span>ENICAR</span> - École Nationale d'Ingénieurs de Carthage</h3>
+                                    <h3 lang="en"><span>ENICAR</span> - National Engineering School of Carthage</h3>
+                                    <h5 class="date">2022 - 2025</h5>
+                                    <ul class="info-list">
+                                        <li lang="fr">Diplôme d'ingénieur en Génie Informatique</li>
+                                        <li lang="en">Computer Engineering degree</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="career-info" id="career-entry-1">
+                                    <!-- Informations pour la 1ère entrée professionnelle -->
+                                    <h3><span>Vayetek</span> - Tunis</h3>
+                                    <h5 class="date" lang="fr">Février - Juillet 2025</h5>
+                                    <h5 class="date" lang="en">February - July 2025</h5>
+                                    <ul class="info-list">
+                                        <li lang="fr">Stage Projet de Fin d'Études (PFE)</li>
+                                        <li lang="en">Final Year Project Internship</li>
+                                        <h4>MISSIONS :</h4>
+                                        <li lang="fr">Conception et développement d'une solution innovante end-to-end pour la digitalisation et l'automatisation des événements de teambuilding.</li>
+                                        <li lang="fr">Architecture et implémentation d'un écosystème multiplateforme complet comprenant une plateforme web administrative, deux applications mobiles natives et des bornes interactives avec photobooths et technologie QR Code.</li>
+                                        <li lang="fr">Développement d'une solution full-stack : backend robuste avec NestJS et interface utilisateur réactive avec Vue.js/Vuex.</li>
+                                        <li lang="fr">Mise en place d'une infrastructure DevOps complète incluant CI/CD automatisé sur GitLab, conteneurisation Docker et déploiement orchestré via Ansible.</li>
+                                        <li lang="en">Design and development of an innovative end-to-end solution for digitizing and automating teambuilding events.</li>
+                                        <li lang="en">Architecture and implementation of a complete multiplatform ecosystem including an administrative web platform, two native mobile applications, and interactive terminals with photobooths and QR Code technology.</li>
+                                        <li lang="en">Development of a full-stack solution: robust backend with NestJS and responsive user interface with Vue.js/Vuex.</li>
+                                        <li lang="en">Implementation of a complete DevOps infrastructure including automated CI/CD on GitLab, Docker containerization, and orchestrated deployment via Ansible.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="career-info" id="career-entry-2">
+                                    <!-- Informations pour la 2eme entrée professionnel -->
+                                    <h3><span>Linedata</span> - Tunis</h3>
+                                    <h5 class="date" lang="fr">Juillet - Août 2024</h5>
+                                    <h5 class="date" lang="en">July - August 2024</h5>
+                                    <ul class="info-list">
+                                        <li lang="fr">Stage d'été</li>
+                                        <li lang="en">Summer Internship</li>
+                                        <h4>MISSIONS :</h4>
+                                        <li lang="fr">Conception et développement d'une API GraphQL pour gérer les rapports de l'application Linedata Global Hedge LGH.</li>
+                                        <li lang="fr">Mise en place d'authentification et d'autorisation via un serveur d'identité.</li>
+                                        <li lang="en">Design and development of a GraphQL API to manage reports for the Linedata Global Hedge LGH application.</li>
+                                        <li lang="en">Implementation of authentication and authorization via an identity server.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box skill_section reveal">
+                        <h2 class="section_title">
+                            <span lang="en">Skills</span>
+                            <span lang="fr">Compétences</span>
+                            <hr class="title_line">
+                        </h2>
+                        <div class="skill-main-container">
+                            <div class="skill-container">
+                                <h1 lang="en">Programming Languages</h1>
+                                <h1 lang="fr">Langages de Programmation</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="python"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="java"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="c"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="c++"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash" />
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1>Front-end</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="html5"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="css3"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="angular"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="react"/>
+                                        <div class="rating advanced"><span lang="en"> Intermediate</span><span lang="fr"> Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" alt="Vue.js"/>
+                                        <div class="rating intermediate"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1>Back-end</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node js"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" alt="spring boot"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain-wordmark.svg" alt="GraphQL"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="images/nest.png" alt="NestJS"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1 lang="en">Database Management</h1>
+                                <h1 lang="fr">Gestion de Base de Données</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="oracle database"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1 lang="en">AI & Machine Learning</h1>
+                                <h1 lang="fr">IA & Machine Learning</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original-wordmark.svg" alt="TensorFlow"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original-wordmark.svg" alt="PyTorch"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original-wordmark.svg" alt="Keras"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1 lang="en">Data Analysis</h1>
+                                <h1 lang="fr">Analyse de Données</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="pandas"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg" alt="numpy"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original-wordmark.svg" alt="OpenCV"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-container">
+                                <h1 lang="en">Version Control</h1>
+                                <h1 lang="fr">Contrôle de Version</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="github"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" alt="gitlab"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <h1 lang="en">DevOps</h1>
+                                <h1 lang="fr">DevOps</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker" />
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="Kubernetes" />
+                                        <div class="rating advanced"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg" alt="Ansible" />
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" alt="GitLabCI" />
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" alt="Terraform" />
+                                        <div class="rating beginner"><span lang="en">Beginner</span><span lang="fr">Débutant</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-container">
+                                <h1 lang="en">Testing</h1>
+                                <h1 lang="fr">Tests</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Selenium"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="images/junit.png" alt="JUnit"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="images/cypress-icon.svg" alt="Cypress"/>
+                                        <div class="rating intermediate"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-container">
+                                <h1 lang="en">Tools</h1>
+                                <h1 lang="fr">Outils</h1>
+                                <div class="icons-container">
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" alt="vscode"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain-wordmark.svg" alt="Visual Studio 2022"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="images/intellig.jpg" alt="IntelliJ IDEA"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original-wordmark.svg" alt="Eclipse"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original-wordmark.svg" alt="PyCharm"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma"/>
+                                        <div class="rating advanced"><span lang="en">Advanced</span><span lang="fr">Avancé</span></div>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"/>
+                                        <div class="rating advanced"><span lang="en">Intermediate</span><span lang="fr">Intermédiaire</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="Projects" class="projet-section section">
+            <div class="section-title-hex">
+                <div class="hexagon-overlay">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <polygon points="50 0, 93.3 25, 93.3 75, 50 100, 6.7 75, 6.7 25"></polygon>
+                    </svg>
+                </div>
+                <h1 class="text reveal" lang="en">Projects</h1>
+                <h1 class="text reveal" lang="fr">Projets</h1>
+                <div class="reflection" lang="en">Projects</div>
+                <div class="reflection" lang="fr">Projets</div>
+            </div>
+            
+            <p class="desc reveal" lang="en">Check some of my projects</p>
+            <p class="desc reveal" lang="fr">Apprenez à me connaître et à découvrir mes compétences</p>
+           <div class="project-container">
+               
+                <div class="arrow" onclick="deactivateTriSection()"></div>
+                <div class="tri-section">
+                    <div class="tri-domaine">
+                        <h3 class="tri-title" lang="en">Sort by domaine</h3>
+                        <h3 class="tri-title" lang="fr">Trier par domaine</h3>
+                        <div class="tri-container" id="tri-domaine-container">
+                            <div class="tri-item active" data-domaine="ALL">
+                                <span lang="en">ALL</span>
+                                <span lang="fr">TOUS</span>
+                            </div>
+                            <div class="tri-item" data-domaine="Web">Web</div>
+                            <div class="tri-item" data-domaine="Mobile">Mobile</div>
+                            <div class="tri-item" data-domaine="Desktop">Desktop</div>
+                        </div>
+                    </div>
+                    <div class="tri-tech">
+                        <h3 class="tri-title" lang="en">Sort by tech</h3>
+                        <h3 class="tri-title" lang="fr">Trier par tech</h3>
+                        <div class="tri-container" id="tri-tech-container">
+                            <div class="tri-item active" data-tech="ALL">
+                                <span lang="en">ALL</span>
+                                <span lang="fr">TOUS</span>
+                            </div>
+                            <div class="tri-item" data-tech="html">html</div>
+                            <div class="tri-item" data-tech="css">css</div>
+                            <div class="tri-item" data-tech="javascript">javascript</div>
+                            <div class="tri-item" data-tech="java">java</div>
+                            <div class="tri-item" data-tech="python">python</div>
+                            <div class="tri-item" data-tech="c">c</div>
+                            <div class="tri-item" data-tech="c++">c++</div>
+                            <div class="tri-item" data-tech="bootstrap">bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <div class="card-container" id="TestiniProject">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                    
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Testini - Online Test and Challenge Management</h1>
+                                        <h1 class="prj-title" lang="fr">Testini - Gestion des Tests et Challenges en Ligne</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Web</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">A comprehensive web application for managing tests, challenges, and quizzes for teachers and students.</p>
+                                        <p class="prj-desc" lang="fr">Une application web complète pour la gestion des tests, défis et quiz destinée aux enseignants et aux étudiants.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/Testini" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></a>
+                                        </div>
+                                        
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Testini - Online Test and Challenge Management</h1>
+                                    <h1 class="prj-title" lang="fr">Testini - Gestion des Tests et Challenges en Ligne</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Angular</div>
+                                        <div class="tri-item">Spring Boot</div>
+                                        <div class="tri-item">MySQL</div>
+                                        <div class="tri-item">Selenium</div>
+                                        <div class="tri-item">SonarQube</div>
+                                        <div class="tri-item">Azure DevOps</div>
+                                    </div>
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">Project developed at Enicar, Nov 2024:</p>
+                                        <ul class="info-list">
+                                            <li>Development of a web application for managing tests, challenges, and quizzes for teachers and students.</li>
+                                            <li>Use of multiple testing tools to ensure application quality:</li>
+                                            <ul>
+                                                <li>Selenium for test automation</li>
+                                                <li>JUnit for unit testing</li>
+                                                <li>Cypress for end-to-end testing</li>
+                                                <li>SonarQube for code analysis</li>
+                                                <li>OWASP ZAP for security testing</li>
+                                                <li>JMeter for performance testing</li>
+                                                <li>Azure DevOps for development lifecycle management</li>
+                                        </ul>
+                                            <li>Implementation of a robust REST API with MVC architecture.</li>
+                                            <li>Providing a user-friendly interface for both teachers and students.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Projet développé à Enicar, Nov 2024 :</p>
+                                        <ul class="info-list">
+                                            <li>Développement d'une application web pour la gestion de tests, défis et quiz destinée aux enseignants et aux étudiants.</li>
+                                            <li>Utilisation de plusieurs outils de test pour garantir la qualité de l'application :</li>
+                                            <ul>
+                                                <li>Selenium pour l'automatisation des tests</li>
+                                                <li>JUnit pour les tests unitaires</li>
+                                                <li>Cypress pour les tests end-to-end</li>
+                                                <li>SonarQube pour l'analyse de code</li>
+                                                <li>OWASP ZAP pour les tests de sécurité</li>
+                                                <li>JMeter pour les tests de performance</li>
+                                                <li>Azure DevOps pour la gestion du cycle de vie du développement</li>
+                                        </ul>
+                                            <li>Mise en œuvre d'une API REST robuste avec une architecture MVC.</li>
+                                            <li>Fourniture d'une interface conviviale pour les enseignants et les étudiants.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-container" id="ForumForceProject">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">ForumForce - Business Forum Management Platform</h1>
+                                        <h1 class="prj-title" lang="fr">ForumForce - Plateforme de Gestion du Forum des Entreprises</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Web</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">A web platform allowing companies to submit content via forms, while administrators can track projects through an interactive dashboard.</p>
+                                        <p class="prj-desc" lang="fr">Une plateforme web permettant aux entreprises de soumettre leur contenu via des formulaires, tandis que l'administrateur peut suivre les projets via un tableau de bord interactif.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/forumForce" target="_blank">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">ForumForce - Business Forum Management Platform</h1>
+                                    <h1 class="prj-title" lang="fr">ForumForce - Plateforme de Gestion du Forum des Entreprises</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Angular</div>
+                                        <div class="tri-item">Spring Boot</div>
+                                        <div class="tri-item">MySQL</div>
+                                        <div class="tri-item">Docker</div>
+                                        <div class="tri-item">GitHub</div>
+                                        <div class="tri-item">MVC</div>
+                                        <div class="tri-item">CRUD</div>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">Project developed at Enicar, Oct 2024:</p>
+                                        <ul class="info-list">
+                                            <li>Design and development of a web platform allowing companies to submit their content through forms.</li>
+                                            <li>Implementation of an interactive dashboard for administrators to track projects.</li>
+                                            <li>Containerization of the application with Docker to facilitate deployment and development environment.</li>
+                                            <li>Project management with GitHub for code versioning and contribution tracking.</li>
+                                            <li>Implementation of a complete CRUD system with MVC architecture.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Projet développé à Enicar, Oct 2024 :</p>
+                                        <ul class="info-list">
+                                            <li>Conception et développement d'une plateforme web permettant aux entreprises de soumettre leur contenu via des formulaires.</li>
+                                            <li>Mise en place d'un tableau de bord interactif pour que l'administrateur puisse suivre les projets.</li>
+                                            <li>Conteneurisation de l'application avec Docker pour faciliter le déploiement et l'environnement de développement.</li>
+                                            <li>Gestion du projet avec GitHub pour versionner le code et suivre les contributions.</li>
+                                            <li>Mise en œuvre d'un système CRUD complet avec architecture MVC.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-container" id="CompetitionMicroserviceProject">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Competition Microservice Project</h1>
+                                        <h1 class="prj-title" lang="fr">Projet de Microservices pour Compétitions</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Web</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">A microservices-based application for managing football competition data, including data scraping, core services, and web interfaces.</p>
+                                        <p class="prj-desc" lang="fr">Une application basée sur des microservices pour la gestion des données de compétitions de football, comprenant l'extraction de données, des services principaux et des interfaces web.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/competition_services" target="_blank">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Competition Microservice Project</h1>
+                                    <h1 class="prj-title" lang="fr">Projet de Microservices pour Compétitions</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Microservices</div>
+                                        <div class="tri-item">Spring Boot</div>
+                                        <div class="tri-item">Data Scraping</div>
+                                        <div class="tri-item">API REST</div>
+                                        <div class="tri-item">Web Services</div>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">This project is a microservices-based application for managing football competition data. It consists of three main components:</p>
+                                        <ul class="info-list">
+                                            <li><strong>Data Scrapping:</strong> Module responsible for collecting football competition data from various sources.</li>
+                                            <li><strong>Football Microservices:</strong> Core backend services that process and manage football competition data, including:
+                                                <ul>
+                                                    <li>Team management</li>
+                                                    <li>Match scheduling</li>
+                                                    <li>Results tracking</li>
+                                                    <li>Statistics calculation</li>
+                                        </ul>
+                                            </li>
+                                            <li><strong>Web Services:</strong> Frontend and API services that provide access to the football competition data.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Ce projet est une application basée sur des microservices pour la gestion des données de compétitions de football. Il se compose de trois composants principaux :</p>
+                                        <ul class="info-list">
+                                            <li><strong>Extraction de Données :</strong> Module responsable de la collecte des données de compétitions de football à partir de diverses sources.</li>
+                                            <li><strong>Microservices Football :</strong> Services backend principaux qui traitent et gèrent les données de compétitions de football, notamment :
+                                                <ul>
+                                                    <li>Gestion des équipes</li>
+                                                    <li>Planification des matchs</li>
+                                                    <li>Suivi des résultats</li>
+                                                    <li>Calcul des statistiques</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Services Web :</strong> Services frontend et API qui fournissent un accès aux données des compétitions de football.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-container" id="DatesClassificationProject">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Tunisian Date Varieties Classification</h1>
+                                        <h1 class="prj-title" lang="fr">Classification des Variétés de Dattes Tunisiennes</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">AI/ML</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">A deep learning project that classifies 11 varieties of Tunisian dates using computer vision and convolutional neural networks.</p>
+                                        <p class="prj-desc" lang="fr">Un projet d'apprentissage profond qui classifie 11 variétés de dattes tunisiennes en utilisant la vision par ordinateur et des réseaux de neurones convolutifs.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/Datte_classification-" target="_blank">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Tunisian Date Varieties Classification</h1>
+                                    <h1 class="prj-title" lang="fr">Classification des Variétés de Dattes Tunisiennes</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Python</div>
+                                        <div class="tri-item">TensorFlow</div>
+                                        <div class="tri-item">CNN</div>
+                                        <div class="tri-item">Computer Vision</div>
+                                        <div class="tri-item">Deep Learning</div>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">This project develops an image classification model to identify 11 varieties of Tunisian dates using the "Deglet Nour Date Fruit Dataset":</p>
+                                        <ul class="info-list">
+                                            <li><strong>Dataset:</strong> Contains 11 date varieties with 300-473 images per class, including varieties like Alig, Bessra, Deglet Nour (multiple types), Kenta, and Kintichi.</li>
+                                            <li><strong>Techniques used:</strong>
+                                                <ul>
+                                                    <li>Image preprocessing (resizing, normalization, contrast enhancement)</li>
+                                                    <li>Data augmentation (rotation, shearing, zoom, flipping)</li>
+                                                    <li>Convolutional Neural Networks (CNN)</li>
+                                                    <li>Stratified cross-validation</li>
+                                                    <li>Advanced evaluation metrics</li>
+                                        </ul>
+                                            </li>
+                                            <li><strong>Results:</strong> The model achieves a test accuracy of approximately 58%, with performance varying by date variety. Detailed results include confusion matrices, classification reports, and learning curves.</li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Ce projet développe un modèle de classification d'images pour identifier 11 variétés de dattes tunisiennes en utilisant le jeu de données "Deglet Nour Date Fruit Dataset" :</p>
+                                        <ul class="info-list">
+                                            <li><strong>Jeu de données :</strong> Contient 11 variétés de dattes avec 300-473 images par classe, incluant des variétés comme Alig, Bessra, Deglet Nour (plusieurs types), Kenta, et Kintichi.</li>
+                                            <li><strong>Techniques utilisées :</strong>
+                                                <ul>
+                                                    <li>Prétraitement d'images (redimensionnement, normalisation, amélioration du contraste)</li>
+                                                    <li>Augmentation de données (rotation, cisaillement, zoom, retournement)</li>
+                                                    <li>Réseaux de neurones convolutifs (CNN)</li>
+                                                    <li>Validation croisée stratifiée</li>
+                                                    <li>Métriques d'évaluation avancées</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Résultats :</strong> Le modèle atteint une précision de test d'environ 58%, avec des performances variables selon les variétés de dattes. Les résultats détaillés comprennent des matrices de confusion, des rapports de classification et des courbes d'apprentissage.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-container" id="SpringBootStage">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Internship Management Platforms for Engineering Schools</h1>
+                                        <h1 class="prj-title" lang="fr">Plateformes de Gestion des Stages pour les Écoles d'Ingénieurs</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Web</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">The application is designed to facilitate the management of internship process within the engineering school.</p>
+                                        <p class="prj-desc" lang="fr">L'application est conçue pour permettre aux administrateurs de gérer le processus des stages au sein de l'ecole d'ingénieurs.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/InternshipManagementPlatform" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></a>
+                                        </div>
+                                        
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Internship Management Platforms for Engineering Schools</h1>
+                                    <h1 class="prj-title" lang="fr">Plateformes de Gestion des Stages pour les Écoles d'Ingénieurs</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Angular</div>
+                                        <div class="tri-item">SpringBoot</div>
+                                        <div class="tri-item">typescript</div>
+                                        <div class="tri-item">bootstrap</div>
+                                        <div class="tri-item">mysql</div>
+                                    </div>
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">The application should allow admins to:</p>
+                                        <ul class="info-list">
+                                            <li>manage the users (student, professors, admins).</li>
+                                            <li>accept/deny internship demands submitted by students.</li>
+                                            <li>post internship offers for students.</li>
+                                            <li>plan the poster session.</li>
+                                            <li>review the posters.</li>
+                                        </ul>
+                                        <p class="prj-desc">The application should allow students to:</p>
+                                        <ul class="info-list">
+                                            <li>post internship demands.</li>
+                                            <li>review the internship offers available.</li>
+                                            <li>post and review the posters.</li>
+                                        </ul>
+
+                                        <p class="prj-desc">The application should allow students to:</p>
+                                        <ul class="info-list">
+                                            <li>review the posters.</li>
+                                            <li>review the session poster calendar.</li>
+                                            <li>vote on best posters.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">L'application devrait permettre aux administrateurs de :</p>
+                                        <ul class="info-list">
+                                        <li>gérer les utilisateurs (étudiants, professeurs, administrateurs).</li>
+                                        <li>accepter/refuser les demandes de stage soumises par les étudiants.</li>
+                                        <li>publier des offres de stage pour les étudiants.</li>
+                                        <li>planifier la session d'affichage des posters.</li>
+                                        <li>examiner les posters.</li>
+                                        </ul>
+
+                                        <p class="prj-desc">L'application devrait permettre aux étudiants de :</p>
+                                        <ul class="info-list">
+                                            <li>publier des demandes de stage.</li>
+                                            <li>consulter les offres de stage disponibles.</li>
+                                            <li>publier et consulter les posters.</li>
+                                        </ul>
+
+                                        <p class="prj-desc">L'application devrait permettre aux étudiants de :</p>
+                                        <ul class="info-list">
+                                            <li>consulter les posters.</li>
+                                            <li>consulter le calendrier de la session d'affichage des posters.</li>
+                                            <li>voter pour les meilleurs posters.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-container" id="JavaFXAstronomyCenter">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Astronomy Center Management Platform</h1>
+                                        <h1 class="prj-title" lang="fr">Plateforme de Gestion d'un Centre Astronomique</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Desktop</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">This platform is designed to manage the astronomy center's operations, including employee records, event planning, and financial tracking.</p>
+                                        <p class="prj-desc" lang="fr">Cette plateforme est conçue pour gérer les opérations du centre astronomique, y compris les dossiers des employés, la planification des événements, et le suivi financier.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/AstronomicCenterManagementApp" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Astronomy Center Management Platform</h1>
+                                    <h1 class="prj-title" lang="fr">Plateforme de Gestion d'un Centre Astronomique</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Java</div>
+                                        <div class="tri-item">JavaFX</div>
+                                        <div class="tri-item">MySQL</div>
+                                    </div>
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">The application allows the center's management to:</p>
+                                        <ul class="info-list">
+                                            <li>Register employees with personal information, skills, and roles.</li>
+                                            <li>Plan and organize astronomy events like public observations, conferences, workshops, and exhibitions.</li>
+                                            <li>Track income and expenses related to the center's activities.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">L'application permet à la direction du centre de :</p>
+                                        <ul class="info-list">
+                                            <li>Enregistrer les employés avec leurs informations personnelles, compétences et rôles.</li>
+                                            <li>Planifier et organiser des événements astronomiques tels que des observations publiques, des conférences, des ateliers et des expositions.</li>
+                                            <li>Suivre les revenus et les dépenses liés aux activités du centre astronomique.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" id="DeliveryManagementStage">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Order Delivery Management System</h1>
+                                        <h1 class="prj-title" lang="fr">Système de Gestion des Livraisons de Commandes</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Database</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">
+                                            This system allows users to input order details, including selected products and required quantities.
+                                            It automatically checks stock availability and notifies users of any shortages.
+                                        </p>
+                                        <p class="prj-desc" lang="fr">
+                                            Ce système permet aux utilisateurs de saisir les détails des commandes, y compris les produits sélectionnés
+                                            et les quantités requises. Il vérifie automatiquement la disponibilité des produits en stock et notifie
+                                            les utilisateurs des éventuelles indisponibilités.
+                                        </p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/livraison_commandes-" target="_blank">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Order Delivery Management System</h1>
+                                    <h1 class="prj-title" lang="fr">Système de Gestion des Livraisons de Commandes</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">SQL Developer</div>
+                                        <div class="tri-item">Oracle</div>
+                                        <div class="tri-item">PL/SQL</div>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">The system allows users to:</p>
+                                        <ul class="info-list">
+                                            <li>Enter order details, including products and quantities.</li>
+                                            <li>Check stock availability in real time.</li>
+                                            <li>Receive notifications for out-of-stock items.</li>
+                                            <li>Generate order summaries and tracking information.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Le système permet aux utilisateurs de :</p>
+                                        <ul class="info-list">
+                                            <li>Saisir les détails de la commande, y compris les produits et les quantités.</li>
+                                            <li>Vérifier la disponibilité des produits en temps réel.</li>
+                                            <li>Recevoir des notifications pour les articles en rupture de stock.</li>
+                                            <li>Générer des résumés et des informations de suivi de commande.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" id="BeautyCenterManagement">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Beauty Center Management System</h1>
+                                        <h1 class="prj-title" lang="fr">Gestion d'un Centre de Beauté</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Desktop</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">An application that enables clients to book beauty appointments, choose a professional, and select a time slot.</p>
+                                        <p class="prj-desc" lang="fr">Permet aux clients de prendre des rendez-vous pour des services de beauté, de choisir un professionnel et de sélectionner un créneau horaire.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/BeautyCenterManagement" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Beauty Center Management System</h1>
+                                    <h1 class="prj-title" lang="fr">Gestion d'un Centre de Beauté</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">C++</div>
+                                    </div>
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">The application allows clients to:</p>
+                                        <ul class="info-list">
+                                            <li>book appointments for beauty services,</li>
+                                            <li>select a professional,</li>
+                                            <li>choose a time slot.</li>
+                                        </ul>
+                                        <p class="prj-desc">The application provides:</p>
+                                        <ul class="info-list">
+                                            <li>a stock management system to track available beauty products,</li>
+                                            <li>invoice generation for rendered services,</li>
+                                            <li>payment processing,</li>
+                                            <li>customer payment history management.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">L'application permet aux clients de :</p>
+                                        <ul class="info-list">
+                                            <li>prendre des rendez-vous pour des services de beauté,</li>
+                                            <li>choisir un professionnel,</li>
+                                            <li>sélectionner un créneau horaire.</li>
+                                        </ul>
+                                        <p class="prj-desc">L'application offre :</p>
+                                        <ul class="info-list">
+                                            <li>un système de gestion des stocks pour suivre les produits de beauté disponibles,</li>
+                                            <li>la génération de factures pour les services rendus,</li>
+                                            <li>le traitement des paiements,</li>
+                                            <li>la gestion des historiques de paiement des clients.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-container" id="LogServerProject">
+                        <div class="project-item">
+                            <div class="front-display">
+                                <div class="img_slider">
+                                    <div class="btn backward"><i class="fas fa-angle-double-left"></i></div>
+                                    <div class="btn forward"><i class="fas fa-angle-double-right"></i></div>
+                                    <div class="img_container"></div>
+                                </div>
+                                <div class="prj-info">
+                                    <div class="container-main">
+                                        <h1 class="prj-title" lang="en">Log Server Setup with Graphical Interface</h1>
+                                        <h1 class="prj-title" lang="fr">Mise en place d'un serveur de logs avec interface graphique</h1>
+                                        <div class="prj-type">
+                                            <div class="tri-item">Infrastructure</div>
+                                        </div>
+                                        <p class="prj-desc" lang="en">This project enables administrators to configure log collection from multiple sources, such as servers, applications, and network devices.</p>
+                                        <p class="prj-desc" lang="fr">Ce projet permet aux administrateurs de configurer la collecte des logs à partir de diverses sources comme les serveurs, les applications, et les dispositifs réseau.</p>
+                                    </div>
+                                    <div class="container-extra">
+                                        <div class="prj-links">
+                                            <a href="https://github.com/oumarii/GraylogServerLogs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /></a>
+                                        </div>
+                                        <div class="plus">
+                                            <span lang="en">See More</span>
+                                            <span lang="fr">Voir Plus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-display">
+                                <div class="icon-box">
+                                    <div class="return-icon">
+                                        <img src="./images/arrow-81-128.png" alt="arrow Back">
+                                    </div>
+                                </div>
+                                <div class="back-container">
+                                    <h1 class="prj-title" lang="en">Log Server Setup with Graphical Interface</h1>
+                                    <h1 class="prj-title" lang="fr">Mise en place d'un serveur de logs avec interface graphique</h1>
+                                    <div class="prj-type">
+                                        <div class="tri-item">Docker</div>
+                                        <div class="tri-item">Rocky Linux</div>
+                                        <div class="tri-item">Graylog</div>
+                                    </div>
+                                    <div class="desc-container" lang="en">
+                                        <p class="prj-desc">The system provides the following capabilities:</p>
+                                        <ul class="info-list">
+                                            <li>Allows administrators to configure log collection from various sources (servers, applications, network devices).</li>
+                                            <li>Enables users to filter, sort, and explore logs to quickly find relevant information.</li>
+                                            <li>Configures custom alerts to notify administrators of critical incidents or abnormal events in the logs.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc-container" lang="fr">
+                                        <p class="prj-desc">Le système offre les fonctionnalités suivantes :</p>
+                                        <ul class="info-list">
+                                            <li>Permet aux administrateurs de configurer la collecte des logs à partir de différentes sources (serveurs, applications, dispositifs réseau).</li>
+                                            <li>Permet aux utilisateurs de filtrer, trier et explorer les logs pour trouver rapidement les informations pertinentes.</li>
+                                            <li>Permet la configuration d'alertes personnalisées pour notifier les administrateurs en cas d'incidents critiques ou d'événements anormaux dans les logs.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="contact-section section">
+            <div class="section-title-hex">
+                <div class="hexagon-overlay">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <polygon points="50 0, 93.3 25, 93.3 75, 50 100, 6.7 75, 6.7 25"></polygon>
+                    </svg>
+                </div>
+                <h1 class="text reveal" lang="en">Contact</h1>
+                <h1 class="text reveal" lang="fr">Contact</h1>
+                <div class="reflection" lang="en">Contact</div>
+                <div class="reflection" lang="fr">Contact</div>
+            </div>
+            <div class="contact-container">
+                <div class="left-side reveal slide-in-left">
+                    <div class="contact-info-container">
+                        <h1 class="contact-title" lang="en">Get in touch</h1>
+                        <h1 class="contact-title" lang="fr">Contactez-moi</h1>
+                        <p class="contact-desc" lang="en">You can contact me with any questions, suggestions, or just to say hi. I am always open to new ideas and collaborations.</p>
+                        <p class="contact-desc" lang="fr">Vous pouvez me contacter pour toutes questions, suggestions ou simplement dire bonjour. Je suis toujours ouvert aux nouvelles idées et collaborations.</p>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <!-- Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="7832f80d-5a49-435f-8d02-199a57d2c3b8">
+
+                        <!-- Email de destination -->
+                        <input type="hidden" name="to" value="oumarighazi5@gmail.com">
+                        
+                        <!-- Sujet de l'email -->
+                        <input type="hidden" name="subject" value="Nouveau message depuis votre Portfolio">
+                        
+                        <!-- Page de redirection après soumission -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
+                        <!-- Protection anti-spam honeypot -->
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <div class="name-email">
+                            <div class="input-container">
+                                <input type="text" name="name" id="name" placeholder=" " required>
+                                <label for="name" lang="en">Your Name</label>
+                                <label for="name" lang="fr">Votre Nom</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email" lang="en">Your Email</label>
+                                <label for="email" lang="fr">Votre Email</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message" lang="en">Your Message</label>
+                            <label for="message" lang="fr">Votre Message</label>
+                        </div>
+                        <button type="submit" class="submit-form">
+                            <p>
+                                <span lang="en">SEND</span>
+                                <span lang="fr">ENVOYER</span>
+                            </p>
+                        </button>
+                        <div id="form-status" style="margin-top: 10px; padding: 10px; border-radius: 5px; text-align: center; display: none;"></div>
+                    </form>
+                </div>
+                <div class="right-side reveal slide-in-right">    
+                    <div class="nice-day">
+                        <span lang="en">Have a nice day</span>
+                        <span lang="fr">Passez une excellente journée</span>
+                    </div>
+                    <div class="contact-hex-container">
+                        <div class="hexagon row1 first" onclick="afficherContact('gmail')">
+                            <a class="social-links"><img src="./images/social_11516211.png" alt="Gmail"></a>
+                        </div>
+                        <div class="hexagon row1">
+                            <a href="https://github.com/oumarii?tab=repositories" target="_blank" class="social-links"><img src="./images/github.png" alt="Github"></a>
+                        </div>
+                        <div class="hexagon row2">
+                            <a href="https://www.linkedin.com/in/oumari-ghazi-028571296/" target="_blank" class="social-links"><img src="./images/linkedin_3536505.png" alt="LinkedIn"></a>
+                        </div>
+                        <div class="hexagon row3 first" onclick="afficherContact('telephone')">
+                            <a class="social-links"><img src="./images/telephoner.png" alt="telephone"></a>
+                        </div>
+                        <div class="hexagon row3">
+                            <a href="https://www.facebook.com/ghazi.oumari" target="_blank" class="social-links"><img src="./images/facebook_5968764.png" alt="Facebook"></a>
+                        </div>
+                        <div class="hexagon row3">
+                            <a href="" class="social-links"><img src="./images/messenger.png" alt="Messenger"></a>
+                        </div>
+                        <div class="contact-info">
+                            <h3 id="gmail">ghazi.oumari@enicar.ucar.tn</h3>
+                            <h3 id="telephone">+216 55 249 961</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                 
+        
+    </main>
+    <footer>
+        
+    </footer>
+
+    <!-- Bouton de retour en haut de page -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./Scripts/init.js"></script>
+    <script src="./Scripts/toggleNavbar.js"></script>
+    <script src="./Scripts/ColorParam.js"></script>
+    <script src="./Scripts/toggleLang.js"></script>
+    <script src="./Scripts/gridAnimation.js"></script>
+    <script src="./Scripts/ToggleButtons.js"></script>
+    <script src="./Scripts/eduCareerFct.js"></script>
+    <script src="./Scripts/triSection.js"></script>
+    <script src="./Scripts/imgSlider.js"></script>
+    <script src="./Scripts/rotateCard.js"></script>
+    <script src="./Scripts/contactHexStyle.js"></script>
+    <script src="./Scripts/contactForm.js"></script>
+    
+    <!-- Script pour le bouton de retour en haut de page -->
+    <script>
+        // Afficher/masquer le bouton de retour en haut
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+        
+        // Action de retour en haut lors du clic
+        document.getElementById('scrollTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animation de révélation au défilement
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        
+        // Activer les animations au chargement de la page
+        window.addEventListener('load', function() {
+            revealOnScroll();
+        });
+    </script>
+
+    <!-- Navigation Enhancement Script -->
+    <script src="./Scripts/navigationEnhancement.js"></script>
+</body>
+</html>
+
+
+

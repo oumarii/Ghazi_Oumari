@@ -1,0 +1,199 @@
+
+
+.skill_section .section_title{
+    margin-bottom: 3rem;
+}
+
+.skill-main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.skill-main-container .skill-container{
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        0 1px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.skill-main-container .skill-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-color), var(--main-color));
+}
+
+.skill-main-container .skill-container:hover{
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-container h1{
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.skill-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--main-color));
+    border-radius: 2px;
+}
+
+.skill-container .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+}
+
+.icons-container .icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.icons-container .icon:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icons-container .icon i{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.icons-container .icon img{
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+}
+
+.icons-container .icon:hover img {
+    transform: scale(1.15);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.icons-container .icon .rating{
+    font-size: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 80px;
+    transition: all 0.3s ease;
+}
+
+/* Niveaux de compétences avec couleurs */
+.icons-container .icon .rating.beginner {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    color: white;
+}
+
+.icons-container .icon .rating.intermediate {
+    background: linear-gradient(135deg, #4ecdc4, #6bcf7f);
+    color: white;
+}
+
+.icons-container .icon .rating.advanced {
+    background: linear-gradient(135deg, var(--accent-color), var(--main-color));
+    color: white;
+}
+
+/* Animation pour les icônes */
+@keyframes skillPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.icons-container .icon.animate {
+    animation: skillPulse 2s ease-in-out infinite;
+}
+
+/* Responsive pour les compétences */
+@media (max-width: 768px) {
+    .skill-main-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .skill-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .icons-container {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 1rem;
+    }
+
+    .icons-container .icon img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .icons-container .icon .rating {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+        min-width: 70px;
+    }
+}
+
+.icons-container .icon .rating.advanced{
+    color: red;
+    border: 2px solid red;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+/* Intermediate Rating */
+.icons-container .icon .rating.intermediate {
+    color: #4CAF50; /* Green color for intermediate */
+    border: 2px solid #4CAF50;
+    background: rgba(76, 175, 80, 0.2); /* Light green background */
+}
+
+/* Beginner Rating */
+.icons-container .icon .rating.beginner {
+    color: #2196F3; /* Blue color for beginner */
+    border: 2px solid #2196F3;
+    background: rgba(33, 150, 243, 0.2); /* Light blue background */
+}
+
